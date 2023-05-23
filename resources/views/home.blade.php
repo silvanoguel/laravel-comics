@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-container py-4 text-center">
+    <div class="card-container py-4 text-center bg-dark">
         <div class="container">
             <div class="row">
                 @foreach ($comics as $comic)
