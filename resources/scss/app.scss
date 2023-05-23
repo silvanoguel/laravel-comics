@@ -2,8 +2,9 @@
 @use './partials/comic-card' as *;
 @import '~bootstrap/scss/bootstrap';
 
+// Footer
 .footer-top {
-    background-image: url(../assets/img/footer-bg.jpg);
+    // background-image: ;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +41,6 @@
 }
 button {
     border: 2px solid #0282F9;
-    background-color: #303030;
     color: white;
     padding: 10px 30px;
 }

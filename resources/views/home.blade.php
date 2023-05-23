@@ -1,21 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-container py-4">
+    <div class="card-container py-4 text-center">
         <div class="container">
-            <div class="row row-cols-4 g-3">
+            <div class="row">
                 @foreach ($comics as $comic)
                     <div class="col">
-                        <div class="card">
+                        <div class="ms_card">
                             <img src="{{ $comic['thumb'] }}" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">{{ $comic['series'] }}</h5>
+                                <p class="card-title">{{ $comic['series'] }}</p>
                             </div>
                         </div>
                     </div>
                 @endforeach
             </div>
-
+            <button>
+                <h3>LOAD MORE</h3>
+            </button> 
         </div>
     </div>
 @endsection
