@@ -1,1 +1,57 @@
+@use './partials/variables' as *;
+@use './partials/comic-card' as *;
 @import '~bootstrap/scss/bootstrap';
+
+.footer-top {
+    background-image: url(../assets/img/footer-bg.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-menu th {
+    color: white;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-menu td {
+    color: #959595;
+    padding-right: 40px;
+
+}
+.footer-down {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #303030;
+    z-index: 999;
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+button {
+    border: 2px solid #0282F9;
+    background-color: #303030;
+    color: white;
+    padding: 10px 30px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    &-text{
+        color: #0282F9;
+    }
+}
+.follow-icons img {
+    margin-left: 15px;
+}
